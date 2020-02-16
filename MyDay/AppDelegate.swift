@@ -6,22 +6,30 @@
 //  Copyright © 2020 Jan Provazník. All rights reserved.
 //
 
+
 import UIKit
 import CoreData
+import CoreStore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
+    var window: UIWindow? {
+        get { return appCoordinator?.window }
+        set { assertionFailure("This will never happen without storyboards.") }
+    }
+    
+    private var appCoordinator: AppCoordinator?
+    
+    let dataStack = DataStack(xcodeModelName: "MyDay") // keep reference to the stack
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        runApp()
         return true
     }
-
+    
     // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options:UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
@@ -32,8 +40,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-    // MARK: - Core Data stack
+    
+    private func runApp() {
+        appCoordinator = AppCoordinator()
+        appCoordinator?.begin()
+    }
 
     lazy var persistentContainer: NSPersistentContainer = {
         /*
@@ -63,7 +74,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     // MARK: - Core Data Saving support
-
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {

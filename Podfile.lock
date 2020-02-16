@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (4.9.1)
+  - CoreStore (7.0.4)
+  - KeychainAccess (4.1.0)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - Result (4.1.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - CoreStore (~> 7.0)
+  - KeychainAccess
+  - Moya (~> 12.0)
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CoreStore
+    - KeychainAccess
+    - Moya
+    - Result
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CoreStore: 9f0124e61d81fc7c89b704dec758eb3c7e71f428
+  KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 6f7bf49c6dc194dd85cd1f56800c6cd2decbe51d
+
+COCOAPODS: 1.8.4

@@ -22,6 +22,7 @@ class TextInputField: FormField {
     var value: Observable<String> {
         return text.asObservable()
     }
+    
     var isValid: Observable<Bool> {
         return text.map({ self.validator($0) }).asObservable()
     }

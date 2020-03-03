@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1610FCB3240ED9B0005137AB /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1610FCB2240ED9B0005137AB /* LoginCoordinator.swift */; };
 		1658E75C23FFE026005861C3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658E75B23FFE026005861C3 /* LoginViewModel.swift */; };
 		1658E75F23FFE2F6005861C3 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1658E75E23FFE2F6005861C3 /* FormField.swift */; };
 		1696BB7423F9BFE40076DAD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1696BB7323F9BFE40076DAD4 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		06EE61FF4786F3846D73B36E /* Pods-MyDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDay.debug.xcconfig"; path = "Target Support Files/Pods-MyDay/Pods-MyDay.debug.xcconfig"; sourceTree = "<group>"; };
+		1610FCB2240ED9B0005137AB /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		1658E75B23FFE026005861C3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1658E75E23FFE2F6005861C3 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
 		1696BB7023F9BFE40076DAD4 /* MyDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 		16ACA3AE23F9C3010055E702 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				1610FCB2240ED9B0005137AB /* LoginCoordinator.swift */,
 				1696BB7723F9BFE40076DAD4 /* LoginViewController.swift */,
 				1658E75B23FFE026005861C3 /* LoginViewModel.swift */,
 			);
@@ -274,6 +277,7 @@
 			files = (
 				16ACA3B023F9C3240055E702 /* Coordinator.swift in Sources */,
 				16BA769E23F9C95000E13D3D /* SceneDelegate.swift in Sources */,
+				1610FCB3240ED9B0005137AB /* LoginCoordinator.swift in Sources */,
 				1696BB7823F9BFE40076DAD4 /* LoginViewController.swift in Sources */,
 				16ACA3B223F9C4BF0055E702 /* AppCoordinator.swift in Sources */,
 				1658E75C23FFE026005861C3 /* LoginViewModel.swift in Sources */,

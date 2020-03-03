@@ -23,9 +23,9 @@ class AppCoordinator: Coordinator {
     
     // MARK: Navigation methods
     private func runLoginFlow() {
-//        let coordinator = LoginCoordinator(flowDelegate: self, window: window)
-//        addChildCoordinator(coordinator)
-//        coordinator.begin()
+        let coordinator = LoginCoordinator(window: window)
+        addChildCoordinator(coordinator)
+        coordinator.begin()
     }
     
     
